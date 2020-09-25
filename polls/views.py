@@ -17,11 +17,13 @@ def polls_details(request, pk):
 
 def polls_results(request, pk):
 	poll = get_object_or_404(Question, pk=pk)
-	choices = poll.choice_set.all()
+	choices = poll.choice_set.all().order_by('-votes')
 	total_votes = sum([choice.votes for choice in choices])
-	results = [f'{choice}: {round(((choice.votes/total_votes) * 100), 1)}%' for choice in choices]
+	percentages = [f'{round(((choice.votes/total_votes) * 100), 1)}%' for choice in choices]
+	vote_results = zip(choices, percentages)
 	context = {
-		"results":results,
+		"total_votes":total_votes,
+		"vote_results":vote_results,
 	}
 	return render(request, 'polls/polls_results.html', context)
 

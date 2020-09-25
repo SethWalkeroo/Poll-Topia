@@ -2,11 +2,12 @@
 
 {% block content %}
     <div class="poll-results">
-        <h2> RESULTS </h1>
-        <ul>
-        {% for percentage in results %}
-            <li> {{ percentage }} </li>
+        <h2><strong>Poll Results</strong></h1>
+        <h4><strong>Total votes:</strong> {{ total_votes }}</h4>
+        <ol>
+        {% for results in vote_results %}
+            <li> {{ results.0 }}:  <strong>{{ results.1 }}</strong> </li>
         {% endfor %}
-        </ul>
+        </ol>
     </div>
 {% endblock %}

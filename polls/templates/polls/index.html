@@ -11,15 +11,22 @@
 			<div class="topnav">
 				<a href="/"><img class="logo" src={% static 'images/mark.jpg' %} width="100" height="100"></a>
 				<a class="title1" href="/">Poll Topia!</a>
-				<input type="button" value="search">
-				<input type="text" placeholder="Search polls...">
+				<a class="create-poll" href="/">&#10010; New Poll</a>
+				<a class="create-poll" href="/">&#9787; Profile</a>
+				<a class="create-poll" href="/">&#9755;Logout</a>
+				<form class="search-bar">
+					<input type="submit" value="Search">
+					<input type="text" placeholder="Search polls...">
+				</form>
 			</div>
 			{% block content %}
 			{% endblock %}
-			<footer>
-				<p>Created by: Seth Walker</p>
-				<a href="https://github.com/SethWalkeroo/Poll-Topia"><p>https://github.com/SethWalkeroo/Poll-Topia</p></a>
-			</footer>
+			<div class="footer">
+				<footer>
+					<p>Created by: Seth Walker</p>
+					<a href="https://github.com/SethWalkeroo/Poll-Topia"><p>https://github.com/SethWalkeroo/Poll-Topia</p></a>
+				</footer>
+			</div>
 		</body>
 	</div>
 </html>

@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="question-choice">
-        <h2>{{ poll.question_text }} </h1>
+        <h2><strong>{{ poll.question_text }}</strong></h1>
         <ol>
             <form action="{% url 'polls_vote' poll.id %}" method="post">
                 {% csrf_token %}
