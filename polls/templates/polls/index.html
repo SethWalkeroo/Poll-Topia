@@ -5,19 +5,20 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="{% static 'css/main.css' %}">
-		<title>Solo Project</title>
+		<title>Poll Topia!</title>
 	</head>
 		<body>
 			<div class="topnav">
-				<a href="/"><img src={% static 'images/mark.jpg' %} width="100" height="100"></a>
-				<a class="active" href="/">Poll Topia!</a>
+				<a href="/"><img class="logo" src={% static 'images/mark.jpg' %} width="100" height="100"></a>
+				<a class="title1" href="/">Poll Topia!</a>
 				<input type="button" value="search">
 				<input type="text" placeholder="Search polls...">
 			</div>
 			{% block content %}
 			{% endblock %}
 			<footer>
-				<p>Author: Seth Walker</p>
+				<p>Created by: Seth Walker</p>
+				<a href="https://github.com/SethWalkeroo/Poll-Topia"><p>https://github.com/SethWalkeroo/Poll-Topia</p></a>
 			</footer>
 		</body>
 	</div>
