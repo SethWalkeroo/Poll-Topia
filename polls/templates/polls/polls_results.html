@@ -1,0 +1,12 @@
+{% extends 'polls/index.html' %}
+
+{% block content %}
+    <div class="poll-results">
+        <h2> RESULTS </h1>
+        <ul>
+        {% for percentage in results %}
+            <li> {{ percentage }} </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
