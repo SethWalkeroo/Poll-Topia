@@ -11,7 +11,7 @@
 			<div class="topnav">
 				<a href="/"><img class="logo" src={% static 'images/mark.jpg' %} width="100" height="100"></a>
 				<a class="title1" href="/">Poll Topia!</a>
-				<a class="create-poll" href="/">&#10010; New Poll</a>
+				<a class="create-poll" href="{% url 'polls_new' %}">&#10010; New Poll</a>
 				<a class="create-poll" href="/">&#9787; Profile</a>
 				<a class="create-poll" href="/">&#9755;Logout</a>
 				<form class="search-bar">

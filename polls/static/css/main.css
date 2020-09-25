@@ -8,6 +8,10 @@ html {
     width: auto;
 }
 
+p {
+    font-size: 15px;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 7px;
@@ -164,7 +168,6 @@ footer a:hover {
 
 .polls-list {
     margin-top: 50px;
-    margin-left: 10px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size:25px;
     box-sizing: border-box;
@@ -183,6 +186,7 @@ footer a:hover {
 .poll-item {
     margin-top: 15px;
     padding-left: 10px;
+    margin-bottom: 30px;
     width: 350px;
     height: 75px;
 }
@@ -216,6 +220,7 @@ footer a:hover {
     color: rgb(0, 105, 124);
     font-size: 20px;
 }
+
 
 .link-results a:hover {
     text-decoration: none;
@@ -288,4 +293,14 @@ footer a:hover {
     font-size: 22px;
     margin-top: 20px;
     margin-left: 45px;
+}
+
+.post-form {
+    margin-top: 40px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-width: auto;
+    border-radius: 4px;
+    border: 3px solid rgb(0, 230, 161);
+    background-color: white;
 }

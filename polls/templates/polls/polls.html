@@ -3,17 +3,18 @@
 {% block content %}
 		<div class="polls-list">
 		<ol>
-		{% for poll in polls %}
+		{% for poll in polls_counts %}
 			<li>
                 <div class="poll-item">
                     <div class='poll-title'>
-                        <h2><a href={% url 'polls_details' pk=poll.pk %}> {{ poll.question_text }}</a></h2>
+                        <h2><a href={% url 'polls_details' pk=poll.0.pk %}> {{ poll.0.question_text }}</a></h2>
                     </div>
                     <div class="poll-author">
-                        <p><a href='/'>Created by: {{ poll.author }}</a></p>
+                        <p><a href='/'>Created by: {{ poll.0.author }}</a></p>
                     </div>
+					<p>{{ poll.1 }} total votes</p>
 					<div class="link-results">
-						<p><a href={% url 'polls_results' poll.id %}>View Results</p>
+						<p><a href={% url 'polls_results' poll.0.id %}>View Results</p>
 					</div>
                 </div>
 				<br>

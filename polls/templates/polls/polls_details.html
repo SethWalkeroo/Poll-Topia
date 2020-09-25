@@ -2,6 +2,9 @@
 
 {% block content %}
     <div class="question-choice">
+        {% if user.is_authenticated %}
+			<a class="btn btn-default" href="{% url 'polls_edit' pk=poll.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+		{% endif %}
         <h2><strong>{{ poll.question_text }}</strong></h1>
         <ol>
             <form action="{% url 'polls_vote' poll.id %}" method="post">
