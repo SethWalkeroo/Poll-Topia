@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: auto;
+    width: auto;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgb(0, 46, 36);
+}
+
+.topnav {
+    display: block;
+    overflow: hidden;
+    border: 3px solid black;
+    background-color: white;
+}
+
+body {
+    background-color: rgb(245, 255, 248);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.active {
+    margin-top: 35px;
+    font-size: 40px;
+}
+
+.topnav a:hover {
+    color: #007558;
+    font-size: 40.15px;
+}
+
+.topnav input[type=text] {
+  border: 2px solid #8b0000;
+  border-radius: 4px;
+  float: right;
+  padding: 6px;
+  margin-top: 38px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+.topnav input[type=button] {
+  float: right;
+  padding: 6px;
+  margin-top: 38px;
+  margin-left: 5px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.topnav input[type=button]:hover {
+    color: rgb(0, 138, 103);
+}
+
+body {
+	padding: 40px;
+	overflow-x: hidden; /* For Opera */
+	-webkit-box-shadow:
+		inset #004131 0 0 0 5px,
+		inset #007777 0 0 0 1px,
+		inset #005f4f 0 0 0 10px,
+		inset #007759 0 0 0 11px,
+		inset #018362 0 0 0 16px,
+		inset #00885b 0 0 0 17px,
+		inset #01a37b 0 0 0 22px,
+		inset #004730 0 0 0 23px;
+	-moz-box-shadow:
+		inset #004131 0 0 0 5px,
+		inset #007777 0 0 0 1px,
+		inset #005f4f 0 0 0 10px,
+		inset #007759 0 0 0 11px,
+		inset #018362 0 0 0 16px,
+		inset #00885b 0 0 0 17px,
+		inset #01a37b 0 0 0 22px,
+		inset #004730 0 0 0 23px;
+	box-shadow:
+		inset #004131 0 0 0 5px,
+		inset #007777 0 0 0 1px,
+		inset #005f4f 0 0 0 10px,
+		inset #007759 0 0 0 11px,
+		inset #018362 0 0 0 16px,
+		inset #00885b 0 0 0 17px,
+		inset #01a37b 0 0 0 22px,
+		inset #004730 0 0 0 23px;
+}
+
+footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+.polls-list {
+    margin-top: 75px;
+    margin-left: 50px;
+    font-family: 'Comic Neue', cursive;
+    font-size:25px;
+}
+
+.poll-item {
+    padding-left: 10px;
+    box-sizing: border-box;
+    border-bottom-style: dotted;
+    margin-top: 50px;
+    width: 350px;
+    height: 75px;
+}
+
+.poll-title h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.poll-title h2 a:hover {
+    color: #009b5f;
+    text-decoration: none;
+    font-size: 25.1px;
+}
+
+
+.poll-author p a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.poll-author p a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.question-choice {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.question-choice h2 {
+    margin-bottom: 20px;
+}
+
+.question-choice ol {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.question-choice input[type="button"] {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+
+.question-choice input[type="checkbox"] {
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+}

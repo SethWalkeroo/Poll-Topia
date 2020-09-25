@@ -1,0 +1,22 @@
+{% extends 'polls/index.html' %}
+
+{% block content %}
+
+    <div class="question-choice">
+        <h2>{{ poll.question_text }} </h1>
+
+        <ol>
+            {% for choice in poll.choice_set.all %}
+            <li>
+                <label class="container"> {{ choice }}
+                    <input type="checkbox">
+                    <span class="radio"></span>
+                </label>
+            </li>
+            {% endfor %}
+        </ol>
+
+        <input type="button", value="Submit vote">
+    </div>
+
+{% endblock %}
